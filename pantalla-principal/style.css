@@ -32,6 +32,7 @@
 .grid-container{
    display: grid;
     margin:0 auto;
+    padding-top: 40px;
 }
 
 .grid-item {
