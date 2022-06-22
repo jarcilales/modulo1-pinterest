@@ -60,9 +60,20 @@
     margin-left: 10px;
     color: gray;
 }
-.messages{
-
-}
 .profile{
     filter: brightness(0.5);
+}
+.content{
+    display: flex;
+    border-radius: 40px;
+    top: 60px;
+    left: 20px;
+    right: 20px;
+    margin-left: 175px;
+    height: 860px;
+    width: 1100px;
+    border: 2px solid gray;
+}
+.content img{
+    border-radius: 40px;
 }
