@@ -1,12 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pinterest</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="https://cdn.worldvectorlogo.com/logos/pinterest-1.svg">
+
 </head>
+
 <body>
-    <h1>Hola</h1>
+    <div class="barra-superior">
+        <div class="logo" >
+            <a href="pinterest.com.mx"></a>
+             <img class="navbar-item" src="https://i.pinimg.com/originals/d3/d1/75/d3d175e560ae133f1ed5cd4ec173751a.png" style="width: 35px;">
+        </div>
+        <div class="inicio" class="navbar-item">
+            <a href="pinterest.com.mx">Inicio</a>
+        </div>
+        <div class="hoy" class="navbar-item">
+            <a href="https://www.pinterest.com.mx/today/">Hoy</a>
+        </div>
+        <div class="search">
+            <div class="lupa">
+                <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" style="width: 18px;">
+            </div>
+            <div class="buscar">
+                <!-- <input type="text" placeholder="hola"> -->
+                <p>Buscar</p>
+            </div>
+        </div>
+        <div class="notificaciones" >
+            <img class="navbar-item" src="https://cdn-icons-png.flaticon.com/128/3602/3602123.png" style="width: 25px;">
+        </div>
+        <div class="messages" >
+            <img class="navbar-item" src="https://cdn-icons-png.flaticon.com/512/134/134718.png" style="width: 25px;">
+        </div>
+        <div class="profile" class="navbar-item">
+            <img class="navbar-item"  src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png" style="width: 25px;">
+        </div>
+    </div>
+    
+    <div class="grid-container">
+        <img src="https://picsum.photos/230/300" class="grid-item" width="230">
+        <img src="https://picsum.photos/230/340" class="grid-item" width="230">
+        <img src="https://picsum.photos/230/390" class="grid-item" width="230">
+        <img src="https://picsum.photos/230/470" class="grid-item" width="230">
+        <img src="https://picsum.photos/230/370" class="grid-item" width="230">
+        <img src="https://picsum.photos/230/400" class="grid-item" width="230">
+        <img src="https://picsum.photos/230/480" class="grid-item" width="230">
+        <img src="https://picsum.photos/230/600" class="grid-item" width="230">
+        <img src="https://picsum.photos/230/705" class="grid-item" width="230">
+        <img src="https://picsum.photos/230/430" class="grid-item" width="230">
+        <img src="https://picsum.photos/230/300" class="grid-item" width="230">
+        <img src="https://picsum.photos/230/340" class="grid-item" width="230">
+        <img src="https://picsum.photos/230/390" class="grid-item" width="230">
+        <img src="https://picsum.photos/230/570" class="grid-item" width="230">
+        <img src="https://picsum.photos/230/470" class="grid-item" width="230">
+        <img src="https://picsum.photos/230/460" class="grid-item" width="230">
+        <img src="https://picsum.photos/230/470" class="grid-item" width="230">
+        <img src="https://picsum.photos/230/550" class="grid-item" width="230">
+        <img src="https://picsum.photos/230/755" class="grid-item" width="230">
+        <img src="https://picsum.photos/230/420" class="grid-item" width="230">
+    </div>
+
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <script>
+        var elem = document.querySelector('.grid-container');
+        imagesLoaded(elem, () => {
+            var msnry = new Masonry(elem, {
+                // options
+                itemSelector: '.grid-item',
+                columnWidth: 230,
+                gutter: 20,
+                isFitWidth: true
+            });
+        });
+
+
+    </script>
 </body>
+
 </html>
