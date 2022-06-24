@@ -17,7 +17,7 @@
 }
 .logo:hover{
     filter: brightness(.5);
-    cursor: zoom-in;
+    cursor: pointer;
 }
 .inicio{
     height: 50px;
@@ -54,7 +54,7 @@
 }
 .input-search:hover{
     filter: brightness(.9);
-    cursor: zoom-in;
+    
 }
 #search {
     margin: 0%;
@@ -75,11 +75,11 @@
 }
 .notificaciones:hover{
     filter: brightness(.5);
-    cursor: zoom-in;
+    cursor: pointer;
 }
 .messages:hover{
     filter: brightness(.5);
-    cursor: zoom-in;
+    cursor: pointer;
 }
 .buscar{
     margin-left: 10px;
@@ -93,7 +93,7 @@
 }
 .profile:hover{
     filter: brightness(.5);
-    cursor: zoom-in;
+    cursor: pointer;
 }
 .messages{
     display: flex;
@@ -349,15 +349,16 @@
 }
 .grid-container{
     display: grid;
-    grid-template-columns: 230px 230px 230px;
-    grid-template-rows: 180px 180px 150px 200px 230px 400px;
+    /* grid-template-columns: 230px 230px 230px;
+    grid-template-rows: 180px 180px 150px 200px 230px 400px; */
+    width:100%;
     position: relative;
     margin-top: 300px;
     top: 1200px;
     left: -2750px;
     column-gap: 0.2em;
     row-gap: 14.5em;
-    top: 600px;
+    top: 600px; 
 }
  .grid-item:hover{
     filter: brightness(.5);

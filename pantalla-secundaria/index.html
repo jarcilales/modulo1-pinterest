@@ -10,14 +10,16 @@
 <body>
     <div class="barra-superior">
         <div class="logo">
-            <a href="pinterest.com.mx"></a>
-             <img src="https://i.pinimg.com/originals/d3/d1/75/d3d175e560ae133f1ed5cd4ec173751a.png" style="width: 35px;">
+            <a href="../pantalla-principal/index.html">
+                <img src="https://i.pinimg.com/originals/d3/d1/75/d3d175e560ae133f1ed5cd4ec173751a.png" style="width: 35px;">
+            </a>
+             
         </div>
         <div class="inicio">
-            <a href="pinterest.com.mx">Inicio</a>
+            <a href="../pantalla-principal/index.html">Inicio</a>
         </div>
         <div class="hoy">
-            <a href="https://www.pinterest.com.mx/today/">Hoy</a>
+            <a href="../pantalla-principal/index.html"">Hoy</a>
         </div>
         <div class="box-search">
             <input type="text" class="input-search" name="buscar" placeholder="Buscar">
@@ -29,8 +31,8 @@
         <div class="messages">
             <img src="https://cdn-icons-png.flaticon.com/512/134/134718.png" style="width: 25px;">
         </div>
-        <div class="profile">
-            <img src="https://cdn-icons.flaticon.com/png/512/3024/premium/3024605.png?token=exp=1655858354~hmac=c98d27e6cc03181c531b0158a24f3f35" style="width: 25px;">
+        <div class="profile" >
+            <img class="navbar-item"  src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png" style="width: 25px;">
         </div>
     </div>
     <div class="para-ti">
@@ -128,17 +130,16 @@
     </div>
     <div class="grid-container">
         <img src="https://i.pinimg.com/564x/4b/ed/a8/4beda86ea8ce826eba7169082fe94042.jpg" class="grid-item" width="230"></a>
-        <img src="https://i.pinimg.com/564x/10/5e/c8/105ec81f89e7cb06879568a60e366028.jpg" class="grid-item" width="180"></a>
-        <img src="https://i.pinimg.com/564x/7d/f0/9b/7df09bfbdbc63d501408e18d2a9180ee.jpg" class="grid-item" width="220"></a>
+        <img src="https://i.pinimg.com/564x/10/5e/c8/105ec81f89e7cb06879568a60e366028.jpg" class="grid-item" width="230"></a>
+        <img src="https://i.pinimg.com/564x/7d/f0/9b/7df09bfbdbc63d501408e18d2a9180ee.jpg" class="grid-item" width="230"></a>
         <img src="https://i.pinimg.com/564x/06/84/ba/0684ba929011f377638c789b5cbe382a.jpg" class="grid-item" width="230"></a>
-        <img src="https://i.pinimg.com/564x/83/20/a2/8320a20eba4071a0fe32404c4c5c1d9d.jpg" class="grid-item" width="170"></a>
-        <img src="https://i.pinimg.com/564x/2c/f6/a0/2cf6a0f15651ff6adb6e231abdc6d996.jpg" class="grid-item" width="220"></a>
+        <img src="https://i.pinimg.com/564x/83/20/a2/8320a20eba4071a0fe32404c4c5c1d9d.jpg" class="grid-item" width="230"></a>
+        <img src="https://i.pinimg.com/564x/2c/f6/a0/2cf6a0f15651ff6adb6e231abdc6d996.jpg" class="grid-item" width="230"></a>
         <img src="https://i.ytimg.com/vi/Cf4CTvlg8bI/maxresdefault.jpg" class="grid-item" width="230"></a>
-        <img src="https://i.pinimg.com/564x/68/91/05/6891055ca97941e41bbf1e0f126c89fc.jpg" class="grid-item" width="180"></a>
+        <img src="https://i.pinimg.com/564x/68/91/05/6891055ca97941e41bbf1e0f126c89fc.jpg" class="grid-item" width="230"></a>
         <img src="https://i.pinimg.com/564x/56/b8/f7/56b8f74d3da3dd5e57a735d3ae2cf28e.jpg" class="grid-item" width="230"></a>
-        <img src="https://i.pinimg.com/564x/3b/94/fa/3b94fa1e92e54f8dc07dc75144ecef15.jpg" class="grid-item" width="180"></a>      
-    </div>
-    <div class="grid-container">
+        <img src="https://i.pinimg.com/564x/3b/94/fa/3b94fa1e92e54f8dc07dc75144ecef15.jpg" class="grid-item" width="230"></a>      
+    
         <img src="https://i.pinimg.com/564x/53/fc/d2/53fcd2b97525ba7d73dc67d87ce28bf9.jpg" class="grid-item" width="230"></a>
         <img src="https://picsum.photos/230/340" class="grid-item" width="230"></a>
         <img src="https://pbs.twimg.com/media/E3Ist8XWEAIx9I3.jpg:small" class="grid-item" width="230"></a>
@@ -148,6 +149,22 @@
         <img src="https://picsum.photos/230/300" class="grid-item" width="230"></a>
         <img src="https://picsum.photos/230/340" class="grid-item" width="230"></a>
         <img src="https://i.pinimg.com/564x/3b/94/fa/3b94fa1e92e54f8dc07dc75144ecef15.jpg" class="grid-item" width="230"></a>
-    </div>
+    </div> 
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <script>
+        var elem = document.querySelector('.grid-container');
+        imagesLoaded(elem, () => {
+            var msnry = new Masonry(elem, {
+                // options
+                itemSelector: '.grid-item',
+                columnWidth: 230,
+                gutter: 20,
+                isFitWidth: true
+            });
+        });
+
+
+    </script>
 </body>
 </html>
