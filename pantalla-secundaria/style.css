@@ -438,11 +438,12 @@
     left: 1300px;
     top: 650px;
     z-index: 2;
-    background-color: #dedede;
+    background-color: white;
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 60px;
     width: 60px;
+    border: solid #dedede;
 }
