@@ -349,8 +349,8 @@
 }
 .grid-container{
     display: grid;
-    /* grid-template-columns: 230px 230px 230px;
-    grid-template-rows: 180px 180px 150px 200px 230px 400px; */
+     grid-template-columns: 230px 230px 230px;
+    grid-template-rows: 180px 180px 150px 200px 230px 400px; 
     width:100%;
     position: relative;
     margin-top: 300px;

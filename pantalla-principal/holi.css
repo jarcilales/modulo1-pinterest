@@ -1,0 +1,19 @@
+/* h1 {
+    display:flex;
+}
+p {
+    display:flex;
+} */
+
+div {
+    display:flex;
+    flex-direction:column;
+}
+
+body {
+    display:flex;
+}
+
+.div2 {
+    flex-direction: column-reverse;
+}
